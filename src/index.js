@@ -1,1 +1,2 @@
 import "./CompTest/";
+import "./CompNav/";
