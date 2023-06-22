@@ -16,6 +16,12 @@
         "incremental": true,
         "baseUrl": "./"
     },
-    "include": ["**/*.ts", "**/*.tsx"],
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "src/index.ts",
+        "src/SpeechToText/index.js",
+        "src/SpeechToText/templates/Stt.ts"
+    ],
     "exclude": ["node_modules"]
 }
