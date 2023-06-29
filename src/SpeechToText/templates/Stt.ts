@@ -13,7 +13,8 @@ SttTemplate.innerHTML = `
       <div id="wrapper">
         <div id="contentScroll">
           <span id="result"></span>
-          <span id="analyseResult">Analyse speech? <span id="emotionDetected"></span></span>
+          <span id="analyseResult">Analyze?</span>
+          <span id="emotionDetected"></span>
         </div>
       </div>
     </div>
@@ -253,6 +254,15 @@ SttTemplate.innerHTML = `
     -webkit-appearance: none; /* Safari and Chrome */
     appearance: none;
     -webkit-padding-right: 20px;
+  }
+
+  #emotionDetected {
+    position: absolute;
+    top: calc(100% + 50px);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+    opacity: 0.7;
   }
 
   #analyseResult {

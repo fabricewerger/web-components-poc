@@ -84,6 +84,7 @@ class Speech extends HTMLElement {
         micButton.classList.remove("start-animation");
         void micButton.offsetWidth;
         micButton.classList.add("start-animation");
+        this.shadowRoot.getElementById("emotionDetected").style.opacity = "0";
     }
 
     stopRecording() {
@@ -97,6 +98,7 @@ class Speech extends HTMLElement {
         this.shadowRoot.getElementById("lvl").style.height = ""; // Reset height
         this.shadowRoot.getElementById("result").innerText =
             this.final_transcript;
+        this.shadowRoot.getElementById("emotionDetected").innerHTML = "";
 
         if (
             this.final_transcript.length > 10 &&
@@ -127,6 +129,12 @@ class Speech extends HTMLElement {
                     : "No emotions detected";
             this.shadowRoot.getElementById("emotionDetected").innerHTML =
                 feedback;
+            this.shadowRoot.getElementById("analyseResult").style.opacity =
+                "0.0";
+            this.shadowRoot.getElementById("emotionDetected").style.opacity =
+                "0.7";
+            this.shadowRoot.getElementById("emotionDetected").style.transition =
+                "all 200ms ease-in-out";
         } else {
             console.log(`There was an error: ${analysis.result_msg}`);
         }
