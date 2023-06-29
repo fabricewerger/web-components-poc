@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "AktivGrotesk";
+    src: url("/assets/fonts/AktivGroteskVF_W_WghtWdth.woff2")
+            format("woff2 supports variations"),
+        url("/assets/fonts/AktivGroteskVF_W_WghtWdth.woff2")
+            format("woff2-variations");
+    font-weight: 100 900;
+    font-stretch: 75 125;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: #04152d;
+}
+
+body {
+    font-family: "AktivGrotesk", sans-serif;
+    font-stretch: expanded;
+}
