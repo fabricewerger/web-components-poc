@@ -21,7 +21,7 @@ SttTemplate.innerHTML = `
   <div id="controls">
     <select name="language" id="language">
       <option value="nl-NL" selected>Nederlands</option>
-      <option value="en-GB" >British</option>
+      <option value="en-GB" >English</option>
     </select>
   </div>
 </dialog>
